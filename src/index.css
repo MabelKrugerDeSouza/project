@@ -1,0 +1,157 @@
+/* Benefits Section - Light Theme */
+.benefits-section {
+  background: #ffffff;
+  position: relative;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section h2 {
+  color: #1e40af;
+  margin-bottom: 3rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-header h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.benefit-divider {
+  height: 3px;
+  width: 60px;
+  background: #3b82f6;
+  margin: 1rem 0;
+}
+
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.benefit-item:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.benefit-icon {
+  font-size: 1.75rem;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.benefit-text {
+  flex: 1;
+}
+
+.benefit-text h5 {
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.benefit-text p {
+  color: #4b5563;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Contact page styles */
+.contact-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.contact-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon-wrapper {
+  transform: scale(1.1);
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.contact-icon {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+/* Form styles */
+.form-control-lg {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+  border-color: #3b82f6;
+}
+
+.form-select.form-control-lg {
+  padding-right: 2rem;
+}
+
+/* Alert animation */
+.alert {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
