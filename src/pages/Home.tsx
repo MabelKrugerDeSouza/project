@@ -39,7 +39,7 @@ function Home() {
           </h2>
           <Row className="g-4">
             <Col lg={6}>
-              <Card className="benefit-card h-100">
+              <Card className="h-100">
                 <Card.Body className="p-4">
                   <div className="benefit-header mb-4">
                     <h3 className="mb-3">Benefícios Ambientais</h3>
@@ -72,7 +72,7 @@ function Home() {
               </Card>
             </Col>
             <Col lg={6}>
-              <Card className="benefit-card h-100">
+              <Card className="h-100">
                 <Card.Body className="p-4">
                   <div className="benefit-header mb-4">
                     <h3 className="mb-3">Benefícios Econômicos</h3>
@@ -167,7 +167,7 @@ function Home() {
           </Row>
           <Row className="justify-content-center g-4">
             <Col md={5}>
-              <Card className="border-0 shadow-sm h-100 contact-card">
+              <Card className="border-0 shadow-sm h-100">
                 <Card.Body className="text-center p-4">
                   <div className="contact-icon-wrapper mb-3">
                     <Phone className="text-primary" size={24} />
@@ -199,34 +199,44 @@ function Home() {
       </div>
 
       {/* Developer Section */}
-      <Container className="py-5">
-        <h2 className="text-center mb-5">Desenvolvedor</h2>
-        <Row className="align-items-center">
-          <Col md={4}>
-            <img
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
-              alt="Desenvolvedor"
-              className="img-fluid shadow"
-              style={{ maxWidth: '100%', height: 'auto' }}
-            />
-          </Col>
-          <Col md={8}>
-            <div className="text-end">
-              <h3 className="mb-3">João da Silva</h3>
-              <p className="mb-2">RM: 12345</p>
-              <p className="lead">
-                Desenvolvedor Full Stack com experiência em React e Node.js. 
-                Especializado em criar soluções web eficientes e sustentáveis.
-              </p>
-              <p>
-                Estudante de Análise e Desenvolvimento de Sistemas, 
-                focado em desenvolver aplicações que promovam a 
-                conscientização sobre eficiência energética.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Container >
+    <h1 className="profile-title">Desenvolvedor</h1>
+    <Row className="align-items-center">
+      <Col md={4} className="text-center">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D4D03AQG8t-M5Of-zOQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708524644360?e=1738195200&v=beta&t=W0m0LNBGAid_iz828zNkOa5Y5sx8_Lz2QKVck6wJOv0"
+          alt="Desenvolvedor"
+          className="profile-image"
+        />
+      </Col>
+      <Col md={8}>
+        <div className="profile-details">
+          <h2 className="profile-name">Mabel Krüger de Souza</h2>
+          <p className="profile-rm">RM: 556422</p>
+          <p className="profile-info">Engenharia de Software</p>
+          <p className="profile-info">1ESOA</p>
+          <div className="profile-buttons">
+            <a
+              href="https://github.com/MabelKrugerDeSouza"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-dark profile-button"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mabel-kruger-de-souza-546773111/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary profile-button"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </Col>
+    </Row>
+</Container>
     </div>
   );
 }

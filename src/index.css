@@ -86,6 +86,17 @@
   line-height: 1.4;
 }
 
+
+.hover-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
 /* Contact page styles */
 .contact-card {
   transition: all 0.3s ease;
@@ -154,4 +165,60 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+/* Título */
+.profile-title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagem */
+.profile-image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalhes do perfil */
+.profile-details {
+  text-align: start;
+}
+
+.profile-name {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.profile-rm {
+  font-size: 20px;
+}
+
+.profile-info{
+  font-size: 18px;
+}
+
+/* Botões */
+.profile-buttons {
+  margin-top: 1rem;
+}
+
+.profile-button {
+  padding-left: 10px; 
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-buttons a {
+  margin-right: 5px; /* Espaço entre os botões */
+}
+
+.profile-buttons a:last-child {
+  margin-right: 0; /* Remove o espaço extra no último botão */
 }
