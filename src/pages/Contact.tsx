@@ -231,48 +231,6 @@ function Contact() {
           </Card>
         </Col>
       </Row>
-
-      {/* Location Section */}
-      <Row className="justify-content-center">
-        <Col lg={8}>
-          <Card className="border-0 shadow-sm overflow-hidden">
-            <Card.Body className="p-4">
-              <div className="d-flex align-items-center mb-4">
-                <MapPin className="text-primary me-3" size={28} />
-                <div>
-                  <h2 className="h3 mb-1">Nossa Localização</h2>
-                  <p className="text-muted mb-0">Venha nos visitar!</p>
-                </div>
-              </div>
-              <div className="ratio ratio-21x9 mb-4">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975774949527!2d-46.6522702!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x63b9f435c2c93a7f!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1709913439297!5m2!1spt-BR!2sbr"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <div className="row g-4">
-                <div className="col-md-6">
-                  <h3 className="h5 mb-3">Endereço</h3>
-                  <p className="text-muted mb-0">
-                    Av. Paulista, 1000 - Bela Vista<br />
-                    São Paulo - SP, 01310-100
-                  </p>
-                </div>
-                <div className="col-md-6">
-                  <h3 className="h5 mb-3">Como Chegar</h3>
-                  <p className="text-muted mb-0">
-                    Metrô: Estação Paulista (Linha Verde)<br />
-                    Ônibus: Diversas linhas na Av. Paulista
-                  </p>
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
     </Container>
   );
 }
