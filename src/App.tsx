@@ -11,7 +11,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/project">
       <div className="d-flex flex-column min-vh-100">
         <Navigation />
         <main className="flex-grow-1">
